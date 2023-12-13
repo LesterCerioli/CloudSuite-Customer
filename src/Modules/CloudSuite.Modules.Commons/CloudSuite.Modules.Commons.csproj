@@ -10,8 +10,4 @@
     <PackageReference Include="NetDevPack" Version="6.1.0" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\CloudSuite.Modules.Commons\CloudSuite.Modules.Commons.csproj" />
-  </ItemGroup>
-
 </Project>
