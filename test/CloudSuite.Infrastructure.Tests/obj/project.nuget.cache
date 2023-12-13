@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "pGn7k9rRbftpT+bvo7FhyLtTT18EHgrqnR0oZA3fZhs1zslkpv8WqfSc1nl4gq/A+LDbJ5izXEciJVnogugtRg==",
+  "dgSpecHash": "/OewLgXkElKNM5fSEb033Guub15KL+M3VkJOLlMcnF+9DlYJAQS3p6ZlgJT2QSBYRi7d8FrvvdgC16H9ydvHqA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Lester\\Documents\\repositories\\azure\\CloudSuite-Customers-NET\\test\\CloudSuite.Infrastructure.Tests\\CloudSuite.Infrastructure.Tests.csproj",
   "expectedPackageFiles": [
@@ -16,6 +16,7 @@
     "C:\\Users\\Lester\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
     "C:\\Users\\Lester\\.nuget\\packages\\newtonsoft.json\\9.0.1\\newtonsoft.json.9.0.1.nupkg.sha512",
     "C:\\Users\\Lester\\.nuget\\packages\\nuget.frameworks\\5.11.0\\nuget.frameworks.5.11.0.nupkg.sha512",
+    "C:\\Users\\Lester\\.nuget\\packages\\reportgenerator\\5.2.0\\reportgenerator.5.2.0.nupkg.sha512",
     "C:\\Users\\Lester\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\Lester\\.nuget\\packages\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\Lester\\.nuget\\packages\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
