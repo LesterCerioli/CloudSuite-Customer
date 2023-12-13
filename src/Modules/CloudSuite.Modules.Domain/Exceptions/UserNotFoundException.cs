@@ -1,7 +1,11 @@
 namespace CloudSuite.Modules.Domain.Exceptions
 {
-    public class UserNotFoundException
+    public sealed class UserNotFoundException : NotFoundException
     {
         
+        public UserNotFoundException(int userId)
+            : base($"The user with the identifier {userId} was not found.")
+        {
+        }
     }
 }
