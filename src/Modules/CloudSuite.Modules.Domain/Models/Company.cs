@@ -1,4 +1,5 @@
 using CloudSuite.Modules.Commons.ValueObjects;
+using NetDevpack.Domain;
 
 
 namespace CloudSuite.Modules.Domain.Models

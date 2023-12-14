@@ -1,7 +1,11 @@
 namespace CloudSuite.Modules.Domain.Exceptions
 {
-    public class NotFoundException
+    public abstract class NotFoundException : ApplicationException
     {
+        protected NotFoundException(string message)
+            : base("Not Found", message)
+        {
+        }
         
     }
 }
