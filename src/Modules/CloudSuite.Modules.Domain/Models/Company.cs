@@ -1,5 +1,6 @@
+using System.Reflection.PortableExecutable;
 using CloudSuite.Modules.Commons.ValueObjects;
-using NetDevpack.Domain;
+using NetDevPack.Domain;
 
 
 namespace CloudSuite.Modules.Domain.Models
