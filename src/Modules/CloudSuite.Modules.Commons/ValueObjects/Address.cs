@@ -21,6 +21,10 @@ namespace CloudSuite.Modules.Commons.ValueObjects
 
         
         public string? UF { get; private set; }
-        
+
+        protected override IEnumerable<object> GetEqualityComponents()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

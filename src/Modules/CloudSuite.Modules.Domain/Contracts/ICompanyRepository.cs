@@ -1,4 +1,5 @@
-using CloudSuite.modules.Commons.ValueObjects;
+using CloudSuite.Modules.Commons.ValueObjects;
+using CloudSuite.Modules.Domain.Models;
 namespace CloudSuite.Modules.Domain.Contracts
 {
     public interface ICompanyRepository
