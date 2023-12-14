@@ -5,28 +5,26 @@ namespace CloudSuite.Modules.Commons.ValueObjects
     public class Address : ValueObject
     {
         
-        [MaxLength(50)]
-        public string? StreetAvenue { get; set; }
+        
+        public string? StreetAvenue { get; private set; }
+
+        public string? District { get; private set; }
+
+            
+        public string? Complement { get; private set; }
+       
+        
+        public string? City { get; private set; }
+       
+        
+        public string? State { get; private set; }
 
         
-        
-        [MaxLength(20)]
-        public string? District { get; set; }
+        public string? UF { get; private set; }
 
-        
-        [MaxLength(20)]
-        public string? Complement { get; set; }
-
-        
-        [MaxLength(50)]
-        public string? City { get; set; }
-
-        
-        [MaxLength(50)]
-        public string? State { get; set; }
-
-        [MaxLength(2)]
-        public string? UF { get; set; }
-        
+        protected override IEnumerable<object> GetEqualityComponents()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
