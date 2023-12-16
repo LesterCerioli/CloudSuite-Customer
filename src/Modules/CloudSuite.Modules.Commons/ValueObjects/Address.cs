@@ -4,8 +4,13 @@ namespace CloudSuite.Modules.Commons.ValueObjects
 {
     public class Address : ValueObject
     {
-        
-        
+        private string? address;
+
+        public Address(string? address)
+        {
+            this.address = address;
+        }
+
         public string? StreetAvenue { get; private set; }
 
         public string? District { get; private set; }

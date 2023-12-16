@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CloudSuite.Application.Handlers.Companies.Responses
 {
-    internal class CheckCompanyByCnpjAndFantasyNameAndSocialNameResponse
+    public class CheckCompanyByCnpjAndFantasyNameAndSocialNameResponse
     {
     }
 }
