@@ -8,13 +8,13 @@ using System.Threading.Tasks;
 
 namespace CloudSuite.Application.Handlers.Companies.Responses
 {
-	public class CreateCompanyResponse : Response
+	public class CheckCompanyByCnpjAndFantasyNameAndSocialNameResponse : Response
 	{
 		public Guid RequestId { get; private set; }
 
 		public bool Exists { get; set; }
 
-		public CreateCompanyResponse(
+		public CheckCompanyByCnpjAndFantasyNameAndSocialNameResponse(
 			Guid requestId, bool exists, ValidationResult result)
 		{
 			RequestId = requestId;
@@ -25,7 +25,7 @@ namespace CloudSuite.Application.Handlers.Companies.Responses
 			}
 		}
 
-		public CreateCompanyResponse(
+		public CheckCompanyByCnpjAndFantasyNameAndSocialNameResponse(
 			Guid requestId, string failValidation)
 		{
 			RequestId = requestId;
