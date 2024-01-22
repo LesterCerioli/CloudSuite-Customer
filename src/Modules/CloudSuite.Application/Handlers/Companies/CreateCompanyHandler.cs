@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CloudSuite.Application.Handlers.Companies
 {
-    internal class CreateCompanyHandler
+    public class CreateCompanyHandler
     {
     }
 }
