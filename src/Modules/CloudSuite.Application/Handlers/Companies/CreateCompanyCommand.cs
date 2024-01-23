@@ -3,8 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using CompanyEntity = CloudSuite.Modules.Domain.Models;
 using CloudSuite.Application.Handlers.Companies.Responses;
+using CloudSuite.Modules.Commons.ValueObjects;
+using MediatR;
+using CompanyEntity = CloudSuite.Modules.Domain.Models.Company; 
+    
+
 
 namespace CloudSuite.Application.Handlers.Companies
 {
@@ -24,17 +28,17 @@ namespace CloudSuite.Application.Handlers.Companies
         {
             Id = Guid.NewGuid();
         }
-        
-        public CompanyEntity GetEntity()
+
+		public CompanyEntity GetEntity()
         {
             return new CompanyEntity(
-                this.SocialName,
-                this.FantasyName,
                 new Cnpj(this.Cnpj),
-                this.FundationDate
-            );
-        }
+                this.FantasyName,
+                this.SocialName
+                
+                );
+            }
 
-        
-    }
+
+	}
 }

@@ -7,7 +7,7 @@ namespace CloudSuite.Modules.Domain.Models
 {
     public class Company : Entity, IAggregateRoot
     {
-        
+		private Cnpj cnpj;
 
 		public Company(Cnpj cnpj, string? socialName, string? fantasyName, DateTime fundationDate)
         {
@@ -17,7 +17,16 @@ namespace CloudSuite.Modules.Domain.Models
             FundationDate = fundationDate;
         }
 
-        public Cnpj Cnpj { get; private set; }
+        public Company() { }
+
+		public Company(Cnpj cnpj, string? fantasyName, string? socialName)
+		{
+			this.cnpj = cnpj;
+			FantasyName = fantasyName;
+			SocialName = socialName;
+		}
+
+		public Cnpj Cnpj { get; private set; }
 
         public string? SocialName { get; private set; }
 
