@@ -1,7 +1,9 @@
-﻿using CloudSuite.Application.Handlers.Companies;
+﻿using AutoMapper;
+using CloudSuite.Application.Handlers.Companies;
 using CloudSuite.Modules.Application.ViewModels;
-using CloudSuite.Modules.Commons.Valueobjects;
+using CloudSuite.Modules.Commons.ValueObjects;
 using CloudSuite.Modules.Application.Services.Contracts;
+using NetDevPack.Mediator;
 
 
 namespace CloudSuite.Modules.Application.Services.Implementations

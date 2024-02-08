@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "PqfmK4ux+eKsPR+J1Cb/4gdiMcmtZoijH4wEVlBScHzKrYSVDgKRPZzq/jt1gvAXnseHnJ6ZOJcAxDTZylG8cA==",
+  "dgSpecHash": "fSijX8pWYlbeb7QhkFpDfw8MfaY+Ii8YGjZ05kHm3moOi90KVezZzSMMSf2WlR9IL7pvxLHyNWu1J3gXjeaW5g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Lester\\Documents\\repositories\\azure\\CloudSuite-Customers-NET\\src\\Infrastructure\\CloudSuite.Infrastructure\\CloudSuite.Infrastructure.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Wanderer\\Source\\Repos\\CloudSuite-Customers-NET\\src\\Infrastructure\\CloudSuite.Infrastructure\\CloudSuite.Infrastructure.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Wanderer\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.26\\microsoft.windowsdesktop.app.ref.6.0.26.nupkg.sha512",
+    "C:\\Users\\Wanderer\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.26\\microsoft.netcore.app.ref.6.0.26.nupkg.sha512",
+    "C:\\Users\\Wanderer\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.26\\microsoft.aspnetcore.app.ref.6.0.26.nupkg.sha512"
+  ],
   "logs": []
 }
