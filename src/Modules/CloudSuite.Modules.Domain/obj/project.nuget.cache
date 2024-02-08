@@ -1,8 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "S0Y97ZuHUQv+UTXT1wWUeuTpi5pETO7hDWLRdTjxz5TzCsvMNlSMRlDD+1++Q7mvc7+r2hxqNTAbxUQoQ0/jeQ==",
+  "dgSpecHash": "baNo+yCPV8DfXNCGP73hoY+9O8vwKrhQOfjb6ON9zJZtxffhotlPufuY+ObVV+p78T7lyp2YBLGHy+8lWmfIfA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Lester\\Documents\\repositories\\azure\\CloudSuite-Customers-NET\\src\\Modules\\CloudSuite.Modules.Domain\\CloudSuite.Modules.Domain.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Wanderer\\Source\\Repos\\CloudSuite-Customers-NET\\src\\Modules\\CloudSuite.Modules.Domain\\CloudSuite.Modules.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Wanderer\\.nuget\\packages\\fluentvalidation\\10.4.0\\fluentvalidation.10.4.0.nupkg.sha512",
+    "C:\\Users\\Wanderer\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
+    "C:\\Users\\Wanderer\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
+    "C:\\Users\\Wanderer\\.nuget\\packages\\netdevpack\\6.1.0\\netdevpack.6.1.0.nupkg.sha512",
+    "C:\\Users\\Wanderer\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.26\\microsoft.windowsdesktop.app.ref.6.0.26.nupkg.sha512",
+    "C:\\Users\\Wanderer\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.26\\microsoft.netcore.app.ref.6.0.26.nupkg.sha512",
+    "C:\\Users\\Wanderer\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.26\\microsoft.aspnetcore.app.ref.6.0.26.nupkg.sha512"
+  ],
   "logs": []
 }

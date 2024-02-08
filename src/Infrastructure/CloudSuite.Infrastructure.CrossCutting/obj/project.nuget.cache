@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "yw2m/S8abmrPLCuHV0YK9e2ILwvPMNs3x+FVpUhTAY3UwSlErY2ep5U+cEPOhTtcBP/680B+9uxgSQOLgduDMQ==",
+  "dgSpecHash": "h5ZpV5N9cDam9CKFpzFIUhOVx1DdVs4XPixWXvvjvW5xO87sw8x9+wcHJco1HwAr2osuVAHcShHaygK9O/T5Iw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Lester\\Documents\\repositories\\azure\\CloudSuite-Customers-NET\\src\\Infrastructure\\CloudSuite.Infrastructure.CrossCutting\\CloudSuite.Infrastructure.CrossCutting.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Wanderer\\Source\\Repos\\CloudSuite-Customers-NET\\src\\Infrastructure\\CloudSuite.Infrastructure.CrossCutting\\CloudSuite.Infrastructure.CrossCutting.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Wanderer\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.26\\microsoft.windowsdesktop.app.ref.6.0.26.nupkg.sha512",
+    "C:\\Users\\Wanderer\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.26\\microsoft.netcore.app.ref.6.0.26.nupkg.sha512",
+    "C:\\Users\\Wanderer\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.26\\microsoft.aspnetcore.app.ref.6.0.26.nupkg.sha512"
+  ],
   "logs": []
 }
