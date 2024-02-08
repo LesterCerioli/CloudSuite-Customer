@@ -6,7 +6,7 @@ namespace CloudSuite.Application.ViewModels
     public class CompanyViewModel
     {
         [Key]
-        public Guid Id; { get; set; }
+        public Guid Id  { get; set; }
 
         [DisplayName("Cnpj da Empresa")]
         [Required(ErrorMessage = "O campo Cnpj deve ser preenchido.")]
