@@ -22,6 +22,14 @@ namespace CloudSuite.Infrastructure.Repositories
             Db = context;
             DbSet = context.Company;
         }
+        public async Task Add(Company company)
+        {
+            await Task.Run(() =>
+            {
+                DbSet.Add(company);
+                Db.SaveChangesAsync();
+            });
+        }
         
         public async Task<Company> GetByCnpj(Cnpj cnpj)
         {
@@ -48,9 +56,5 @@ namespace CloudSuite.Infrastructure.Repositories
             Db.Dispose();
         }
 
-        public Task Add(Company company)
-        {
-            throw new NotImplementedException();
-        }
     }
 }
