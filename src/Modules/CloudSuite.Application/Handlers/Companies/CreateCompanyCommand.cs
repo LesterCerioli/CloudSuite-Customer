@@ -1,12 +1,30 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using CloudSuite.Modules.Commons.ValueObjects;
+using MediatR;
+using CompanyEntity = CloudSuite.Modules.Domain.Models.Company;
+
 
 namespace CloudSuite.Application.Handlers.Companies
 {
-    internal class CreateCompanyCommand
+    public class CreateCompanyCommand : IRequest<CreateCompanyCommand>
     {
+        public Guid Id { get; private set; }
+        public string? Cnpj {  get;  set; }
+
+        public string? SocialName { get; set; }
+
+        public string? FantasyName { get; set; }
+
+        public DateTime FoundationDate { get; set; }
+
+        public CompanyEntity GetEntity()
+        {
+            return new CompanyEntity(
+                new Cnpj(this.Cnpj),
+                this.SocialName,
+                this.FantasyName,
+                this.FoundationDate
+                );
+        }
+
     }
 }

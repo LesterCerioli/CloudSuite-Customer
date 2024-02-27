@@ -1,12 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using CloudSuite.Application.Handlers.Companies.Responses;
+using MediatR;
 
 namespace CloudSuite.Application.Handlers.Companies.Requests
 {
-    internal class checkCompanyByCnpjAndFantasyNameAndSocialNameRequest
+    public class CheckCompanyExistsByCnpjAndFantasyNameAndSocialNameRequest : IRequest<CheckCompanyExistsByCnpjAndFantasyNameAndSocialNameResponse>
     {
+        public Guid Id {  get; private set; }
+        public string? Cnpj {  get; set; }
+        public string? SocialName { get; set; }
+        public string? FantasyName {  get; set; }
+
+        public CheckCompanyExistsByCnpjAndFantasyNameAndSocialNameRequest(Guid id, string? cnpj, string? socialName, string? fantasyName)
+        {
+            Id = Guid.NewGuid();
+            Cnpj = cnpj;
+            SocialName = socialName;
+            FantasyName = fantasyName;
+        }
     }
 }
