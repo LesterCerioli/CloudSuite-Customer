@@ -21,4 +21,8 @@
     <PackageReference Include="NetDevPack" Version="6.1.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\Modules\CloudSuite.Modules.Domain\CloudSuite.Modules.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
