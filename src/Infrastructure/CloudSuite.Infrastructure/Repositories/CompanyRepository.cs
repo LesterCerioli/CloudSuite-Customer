@@ -1,4 +1,5 @@
-﻿using CloudSuite.Modules.Commons.ValueObjects;
+﻿using CloudSuite.Infrastructure.Context;
+using CloudSuite.Modules.Commons.ValueObjects;
 using CloudSuite.Modules.Domain.Contracts;
 using CloudSuite.Modules.Domain.Models;
 using System;
@@ -11,45 +12,56 @@ namespace CloudSuite.Infrastructure.Repositories
 {
 	public class CompanyRepository : ICompanyRepository
 	{
-		
-		public CompanyRepository()
-		{
 
+		protected readonly CustomerDbContext Db;
+		protected readonly DbSet<Company> DbSet;
+		
+		public CompanyRepository(CustomerDbContext context)
+		{
+			Db = context;
+			DbSet = context.Companies;
 		}
 
 		public async Task Add(Company company)
 		{
-			throw new NotImplementedException();
+			await Task.Run(() =>
+			{
+				Db.Add(company);
+			});
 		}
 
 		public async Task<Company> GetByCnpj(Cnpj cnpj)
 		{
-			throw new NotImplementedException();
+			return await DbSet.FirstOrDefaultAsync(c => c.Cnpj == cnpj);
 		}
 
 		public async Task<Company> GetByFantasyName(string fantasyName)
 		{
-			throw new NotImplementedException();
+			return await DbSet.FirstOrDefaultAsync(c => c.FantasyName == fantasyName);
 		}
 
 		public async Task<Company> GetBySocialName(string socialName)
 		{
-			throw new NotImplementedException();
+			return await DbSet.FirstOrDefaultAsync(c => c.SocialName == socialName);
 		}
 
 		public async Task<IEnumerable<Company>> GetList()
 		{
-			throw new NotImplementedException();
+			return DbSet.ToList();
 		}
 
 		public void Remove(Company company)
 		{
-			throw new NotImplementedException();
+			Db.Remove(company);
 		}
 
 		public void Update(Company company)
 		{
-			throw new NotImplementedException();
+			Db.Update(company);
+		}
+
+		public void Dispose() {
+			Db.Dispose();
 		}
 	}
 }
