@@ -6,4 +6,13 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CloudSuite.Modules.Commons\CloudSuite.Modules.Commons.csproj" />
+    <ProjectReference Include="..\CloudSuite.Modules.Domain\CloudSuite.Modules.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
