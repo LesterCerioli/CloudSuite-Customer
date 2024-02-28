@@ -6,6 +6,10 @@ namespace CloudSuite.Modules.Domain.Contracts
     {
         Task<Company> GetByCnpj(Cnpj cnpj);
 
+        Task<Company> GetByFantasyName(string fantasyName);
+
+        Task<Company> GetBySocialName(string socialName);
+
         Task<IEnumerable<Company>> GetList();
 
         Task Add(Company company);
