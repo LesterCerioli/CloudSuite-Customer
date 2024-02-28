@@ -9,7 +9,6 @@ namespace CloudSuite.Application.Handlers.Companies
 {
     public class CreateCompanyHandler : IRequestHandler<CreateCompanyCommand, CreateCompanyResponse>
     {
-
         private ICompanyRepository _repositorioCompany;
         private readonly ILogger<CreateCompanyHandler> _logger;
 
@@ -24,20 +23,22 @@ namespace CloudSuite.Application.Handlers.Companies
             _logger.LogInformation($"CreateCompanyCommand: {JsonSerializer.Serialize(command)}");
             var validationResult = new CreateCompanyCommandValidation().Validate(command);
 
-            if(validationResult.IsValid ) {
+            if (validationResult.IsValid)
+            {
                 try
                 {
                     var company = await _repositorioCompany.GetByCnpj(new Cnpj(command.Cnpj));
-                    if(company != null)
+                    if (company != null)
                     {
                         return await Task.FromResult(new CreateCompanyResponse(command.Id, "Company already registered."));
                     }
 
                     await _repositorioCompany.Add(command.GetEntity());
                     return await Task.FromResult(new CreateCompanyResponse(command.Id, validationResult));
-                }catch(Exception ex)
+                }
+                catch (Exception ex)
                 {
-                    _logger.LogException(ex.Message);
+                    _logger.LogCritical(ex.Message);
                     return await Task.FromResult(new CreateCompanyResponse(command.Id, "It wasn`t possible to process the solicitation."));
                 }
             }

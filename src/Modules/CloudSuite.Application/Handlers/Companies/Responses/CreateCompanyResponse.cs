@@ -9,11 +9,11 @@ namespace CloudSuite.Application.Handlers.Companies.Responses
 {
     public class CreateCompanyResponse : Response
     {
-        public Guid Requestid { get; private set; }
+        public Guid RequestId { get; private set; }
 
         public CreateCompanyResponse(Guid requestid, ValidationResult result)
         {
-            Requestid = requestid;
+            RequestId = requestid;
             foreach(var item in result.Errors) {
                 this.AddError(item.ErrorMessage);
             }
@@ -21,7 +21,7 @@ namespace CloudSuite.Application.Handlers.Companies.Responses
 
         public CreateCompanyResponse(Guid requestid, string validationFailure)
         {
-            Requestid = requestid;
+            RequestId = requestid;
             this.AddError(validationFailure);
         }
     }

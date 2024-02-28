@@ -4,7 +4,7 @@ using CloudSuite.Modules.Commons.ValueObjects;
 using CloudSuite.Modules.Domain.Contracts;
 using MediatR;
 using System.Text.Json;
-using Microsoft.Extension.Logging;
+using Microsoft.Extensions.Logging;
 
 
 namespace CloudSuite.Application.Handlers.Companies

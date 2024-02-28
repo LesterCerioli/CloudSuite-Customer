@@ -1,11 +1,12 @@
-﻿using CloudSuite.Modules.Commons.ValueObjects;
+﻿using CloudSuite.Application.Handlers.Companies.Responses;
+using CloudSuite.Modules.Commons.ValueObjects;
 using MediatR;
 using CompanyEntity = CloudSuite.Modules.Domain.Models.Company;
 
 
 namespace CloudSuite.Application.Handlers.Companies
 {
-    public class CreateCompanyCommand : IRequest<CreateCompanyCommand>
+    public class CreateCompanyCommand : IRequest<CreateCompanyResponse>
     {
         public Guid Id { get; private set; }
         public string? Cnpj {  get;  set; }
