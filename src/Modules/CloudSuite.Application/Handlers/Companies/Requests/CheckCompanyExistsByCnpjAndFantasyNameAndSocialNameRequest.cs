@@ -17,5 +17,10 @@ namespace CloudSuite.Application.Handlers.Companies.Requests
             SocialName = socialName;
             FantasyName = fantasyName;
         }
-    }
+
+		public CheckCompanyExistsByCnpjAndFantasyNameAndSocialNameRequest(string cnpj)
+		{
+			Cnpj = cnpj;
+		}
+	}
 }

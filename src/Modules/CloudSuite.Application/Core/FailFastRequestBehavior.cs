@@ -31,8 +31,7 @@ namespace CloudSuite.Application.Core
 			return Task.FromResult(response as TResponse);
 		}
 
-
-		public async Task<TResponse> Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate<TResponse> next)
+		public async Task<TResponse> Handle(TRequest request, RequestHandlerDelegate<TResponse> next, CancellationToken cancellationToken)
 		{
 			var failures = _validators
 				.Select(v => v.Validate((IValidationContext)request))

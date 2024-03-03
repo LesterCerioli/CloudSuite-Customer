@@ -13,7 +13,7 @@ namespace CloudSuite.Infrastructure.CrossCutting.DependencyInjector
 	{
 		public static IServiceCollection AddMediator(this IServiceCollection services)
 		{
-			var assembly = AppDomain.CurrentDomain.Load("CloudSuite.Modules.Application");
+			var assembly = AppDomain.CurrentDomain.Load("CloudSuite.Application");
 
 			AssemblyScanner
 				.FindValidatorsInAssembly(assembly)

@@ -17,12 +17,12 @@ namespace CloudSuite.Infrastructure.CrossCutting.DependencyInjector
 				options.CustomSchemaIds(type => type.ToString());
 				options.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo()
 				{
-					Title = "CloudSuite Core Api DotNet Core version 1.0",
+					Title = "Aché Pacientes Api DotNet Core version 1.0",
 					Version = "v1",
 					Contact = new Microsoft.OpenApi.Models.OpenApiContact()
 					{
-						Email = "lester.cerioli@lucastechnologyservices.onmicrosoft.com",
-						Name = "Lucas Technology Service"
+						Email = "ache@ache.com.br",
+						Name = "Aché"
 					}
 				});
 			});
