@@ -21,8 +21,7 @@ namespace CloudSuite.Infrastructure.Mapping.Daooer
 		public async Task<IEnumerable<Company>> GetAllCompaniesAsync()
 		{
 			var query = @"
-                SELECT 
-                    Id,
+                SELECT
                     SocialName,
                     FantasyName,
                     FundationDate,
@@ -39,28 +38,44 @@ namespace CloudSuite.Infrastructure.Mapping.Daooer
 			return await _connection.QueryAsync<Company>(query);
 		}
 
-		public async Task<Company> GetCompanyByIdAsync(int companyId)
+		public async Task<Company> GetCompanyByCnpjAsync(string companyCnpj)
 		{
 			var query = @"
                 SELECT 
-                    Id,
-                    SocialName,
-                    FantasyName,
-                    FundationDate,
-                    CNPJNumber,
-                    StreetOrValue AS StreetAvenue,
-                    District,
-                    Complement,
-                    City,
-                    State,
-                    UF
+                    CNPJNumber
                 FROM
                     Companies
                 WHERE
-                    Id = @CompanyId";
+                    CNPJNumber = @CompanyCnpj";
 
-			return await _connection.QueryFirstOrDefaultAsync<Company>(query, new { CompanyId = companyId });
+			return await _connection.QueryFirstOrDefaultAsync<Company>(query, new { CompanyCnpj = companyCnpj });
 		}
 
-	}
+        public async Task<Company> GetCompanyByFantasyNameAsync(string companyFantasyName)
+        {
+            var query = @"
+                SELECT 
+                    FantasyName
+                FROM
+                    Companies
+                WHERE
+                    FantasyName = @CompanyFantasyName";
+
+            return await _connection.QueryFirstOrDefaultAsync<Company>(query, new { CompanyFantasyName = companyFantasyName });
+        }
+
+        public async Task<Company> GetCompanyBySocialNameAsync(string companySocialName)
+        {
+            var query = @"
+                SELECT 
+                    SocialName
+                FROM
+                    Companies
+                WHERE
+                    SocialName = @CompanySocialName";
+
+            return await _connection.QueryFirstOrDefaultAsync<Company>(query, new { CompanySocialName = companySocialName });
+        }
+
+    }
 }
